@@ -14,30 +14,30 @@ TEMPLATE_DEBUG = DEBUG
 # Setting up dbms                                                             #
 ###############################################################################
 DATABASES = {
-#    'csoa': {
-#        'NAME': 'CSOACFG',
+#    'sara': {
+#        'NAME': 'SARA',
 #        'ENGINE': 'django.db.backends.mysql',
-#        'USER': 'csoa',
-#        'PASSWORD': 'csoa',
+#        'USER': 'sara',
+#        'PASSWORD': 'sara',
+#        'HOST':LAB_HOST,  
+#        'PORT':'3306'  
+#    },
+#    'default': {
+#        'NAME': 'MYDATABASE',
+#        'ENGINE': 'django.db.backends.mysql',
+#        'USER': 'user',
+#        'PASSWORD': 'password',
 #        'HOST':LAB_HOST,  
 #        'PORT':'3306'  
 #    },
     'default': {
-        'NAME': 'TRACKSTORE',
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'ultraweb',
-        'PASSWORD': 'ultraweb',
-        'HOST':LAB_HOST,  
-        'PORT':'3306'  
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': rel('sqlite.db'),               # Or path to database file if using sqlite3.
+        'USER': '',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-#        'NAME': '/home/jds/workspace/UltraWeb/src/sqlite.db', # Or path to database file if using sqlite3.
-#        'USER': '',                      # Not used with sqlite3.
-#        'PASSWORD': '',                  # Not used with sqlite3.
-#        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-#        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-#    }
 }
 
 ###############################################################################
@@ -67,8 +67,6 @@ try:
     debug_toolbar
     from socket import gethostname, gethostbyname
     INTERNAL_IPS = ( '127.0.0.1', 
-                     '172.16.98.145', 
-                     '172.16.176.124', 
                      gethostbyname(gethostname())+":8000/",) # debug_toolbar
 # Note: debug toolbar breaks the streaming middleware.
     midd_class = list(MIDDLEWARE_CLASSES)
