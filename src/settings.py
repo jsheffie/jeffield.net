@@ -44,8 +44,9 @@ TEMPLATE_CONTEXT_PROCESSORS=(#"django.core.context_processors.auth",
                              "django.core.context_processors.i18n",
                              "django.core.context_processors.media",
                              "django.contrib.messages.context_processors.messages",
-                             "django.core.context_processors.request",)
-
+                             "django.core.context_processors.request",
+                             'django.core.context_processors.static',
+                             'zinnia.context_processors.version',)
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -105,10 +106,15 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'django.contrib.admindocs',
+    'django.contrib.admindocs', 
+    'django.contrib.comments',
+    'tagging',
+    'mptt',
+    'zinnia',
 )
 
 SERIALIZATION_MODULES = {

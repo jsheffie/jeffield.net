@@ -1,0 +1,62 @@
+BeautifulSoup==3.2.1
+django-tagging==0.3.1
+PIL==1.1.7
+python-dateutil==2.1
+django==1.4.2
+pyparsing >= 1.5.5
+django-xmlrpc >= 0.1.3
+wadofstuff-django-serializers
+akismet
+
+-e git+git://github.com/django-debug-toolbar/django-debug-toolbar.git#egg=django-debug-toolbar
+-e git+git://github.com/ross/memcache-debug-panel.git#egg=memcache-debug-panel
+-e git+git://github.com/joymax/django-dtpanel-htmltidy.git#egg=django-dtpanel-htmltidy
+-e git+git://github.com/playfire/django-debug-toolbar-user-panel.git#egg=django-debug-debug-toolbar-user-panel
+-e git+git://github.com/elvard/django-sites-toolbar.git#egg=django-sites-toolbar
+-e git+git://github.com/streeter/django-haystack-panel.git#egg=django-haystack-panel
+
+-e git+git://github.com/toastdriven/django-haystack.git@master#egg=django-haystack
+
+-e git+git://github.com/alex/django-taggit.git#egg=django-taggit
+
+#-e git+git://github.com/sniku/django-pygments.git#egg=django-pygments
+
+FeedParser==5.1.2
+Markdown==2.2.0
+textile==2.1.5
+django-robots==0.8.1
+django-celery==3.0.11
+celery==3.0.11
+simplejson==2.6.2
+South==0.7.6
+
+-e git+git://github.com/django-extensions/django-extensions.git#egg=django_extensions
+-e git+git://github.com/nathanborror/django-basic-apps.git#egg=basic
+-e git+git://github.com/ktonon/django-disqus.git#egg=disqus
+-e git+git://github.com/getsentry/sentry.git#egg=sentry
+
+-e git+git://github.com/django-mptt/django-mptt.git#egg=django-mptt
+
+django-blog-zinnia
+
+#-e svn+http://django-template-utils.googlecode.com/svn/trunk#egg=template_utils
+#-e git+git://github.com/montylounge/django-proxy.git#egg=django_proxy
+#-e git+git://github.com/mintchaos/django_compressor.git#egg=compressor
+#-e git+git://github.com/bartTC/django-markup.git#egg=django_markup
+#-e git+git://github.com/montylounge/django-google-analytics.git#egg=google_analytics
+#-e hg+https://bitbucket.org/kmike/django-view-cache-utils/#egg=view_cache_utils
+#-e hg+https://bitbucket.org/ubernostrum/django-contact-form/#egg=contact_form
+#-e git+git://github.com/sunlightlabs/django-honeypot.git#egg=honeypot
+#-e git+git://github.com/montylounge/django-sugar.git#egg=sugar
+#-e git+git://github.com/montylounge/django-quoteme.git#egg=quoteme
+#-e hg+https://python-twitter.googlecode.com/hg/#egg=python-twitter
+#-e svn+http://django-tinymce.googlecode.com/svn/trunk/#django-tinymce
+#-e git+git://github.com/pydanny/django-wysiwyg.git#egg=django-wysiwyg
+#-e git+git://github.com/hbussell/django-slimmer.git#egg=django-slimmer
+#-e git+git://github.com/montylounge/django_cropper.git#egg=django-cropper
+#django-dbtemplates==0.6.1
+#django-memcache-status==1.0.1
+#-e git+git://github.com/kylef/django-request.git#egg=django-request
+#-e git://github.com/sorl/sorl-thumbnail.git#egg=sorl_thumbnail
+#-e git://github.com/montylounge/django-basic-apps.git#egg=django_basic_apps
+#-e git://github.com/ktonon/django-portfolio.git#egg=django_portfolio

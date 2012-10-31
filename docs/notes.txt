@@ -1,0 +1,2 @@
+Python Dependancies via Pip
+# https://devcenter.heroku.com/articles/python-pip
